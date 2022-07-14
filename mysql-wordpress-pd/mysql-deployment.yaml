@@ -31,6 +31,7 @@ metadata:
   name: wordpress-mysql
   labels:
     app: wordpress
+    component: backend
 spec:
   selector:
     matchLabels:
