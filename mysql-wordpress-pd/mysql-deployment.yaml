@@ -36,6 +36,7 @@ spec:
     matchLabels:
       app: wordpress
       tier: mysql
+      component: backend
   strategy:
     type: Recreate
   template:
