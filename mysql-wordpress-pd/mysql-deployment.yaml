@@ -31,13 +31,11 @@ metadata:
   name: wordpress-mysql
   labels:
     app: wordpress
-    component: backend
 spec:
   selector:
     matchLabels:
       app: wordpress
       tier: mysql
-      component: backend
   strategy:
     type: Recreate
   template:
@@ -45,7 +43,6 @@ spec:
       labels:
         app: wordpress
         tier: mysql
-        component: backend
     spec:
       containers:
       - image: mysql:latest #mysql:5.6
